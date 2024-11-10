@@ -1,0 +1,11 @@
+<div class="card-container">
+    <div class="element">
+        <span>Nome: {{ contact.name }}</span>
+    </div>
+    <div class="element">
+        <span>Cognome: {{ contact.surname }}</span>
+    </div>
+    <div class="element">
+        <span>Data nascita: {{ contact.birthDate | date: 'dd/MM/YYYY' }}</span>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="filter-container">
+    <select name="property" [(ngModel)]="property">
+        <option value="name">Nome</option>
+        <option value="surname">Cognome</option>
+        <option value="birthDate">Data nascita</option>
+    </select>
+
+    <select name="operator" [(ngModel)]="operator">
+        <option value="eq">==</option>
+        <option value="ne">!=</option>
+        <option value="gt">></option>
+        <option value="ge">>=</option>
+        <option value="lt">&lt;</option>
+        <option value="le">&lt;=</option>
+    </select>
+
+    <input type="text" placeholder="Enter value" [(ngModel)]="value">
+
+    <button (click)="applyFilter()">Apply filter</button>
+</div>
